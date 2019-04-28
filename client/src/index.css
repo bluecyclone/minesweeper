@@ -1,0 +1,134 @@
+:root {
+  font: 16px / 1 sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.button-section {
+  width: 1rem;
+  height: 1rem;
+}
+.bombs-time-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.label-section {
+  color: red;
+  background: black;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  margin: 0.5rem;
+  width: 3.6rem;
+  text-align: center;
+}
+
+table {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.button-new-game,
+.button-continue-game{
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  margin: 5px
+}
+
+.button-reveled {
+  font-size: 0.5rem;
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: rgb(143, 200, 238);
+  border: 0.1rem solid rgb(153, 143, 143);
+  text-align: center;
+}
+
+.button-bomb-reveled {
+  font-size: 0.5rem;
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: red;
+  border: 0.1rem solid rgb(153, 143, 143);
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.game-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-color: #ccc;
+  border: 0.1rem solid rgb(153, 143, 143);
+  border-radius: 0.5rem;
+}
+.state-game {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.option-section,
+.screen-message {
+  padding: 1rem;
+  text-align: center
+}
+.option-section h2{
+  margin-bottom: 50px
+}
+.screen-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .screen-message h2 {
+    font-size: 1.2rem;
+  }
+
+  .button-reveled {
+    font-size: 0.6rem;
+    padding: 0;
+    cursor: pointer;
+    background-color: rgb(143, 200, 238);
+    border: 0.1rem solid rgb(153, 143, 143);
+    text-align: center;
+  }
+
+  .button-bomb-reveled {
+    font-size: 0.5rem;
+    cursor: pointer;
+    background-color: red;
+    border: 0.1rem solid rgb(153, 143, 143);
+    text-align: center;
+  }
+}
